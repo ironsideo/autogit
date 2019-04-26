@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use \App\Cars;
 
-class CarYearFiledTest extends TestCase
+class CountCarTest extends TestCase
 {
     /**
      * A basic unit test example.
@@ -16,6 +16,10 @@ class CarYearFiledTest extends TestCase
      */
     public function testExample()
     {
-        $this->assertInternalType("string", Cars::first()->year);
+        $user = Cars::where('is_seed', 1)->count();;
+
+    	$result = ($user == 50)?true:false;
+
+        $this->assertTrue($result);
     }
 }
