@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use \App\Cars;
 
-class CarMakeTest extends TestCase
+class CarModelTest extends TestCase
 {
     /**
      * A basic unit test example.
@@ -16,7 +16,6 @@ class CarMakeTest extends TestCase
      */
     public function testExample()
     {
-         $this->assertContains(Cars::first()->Make, ['ford','honda','toyota'] );
-   
+        $this->assertInternalType("string", Cars::first()->Model);
     }
 }
