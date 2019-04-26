@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use \App\User;
 
-class CountUserTest extends TestCase
+class CountUserTest2 extends TestCase
 {
     /**
      * A basic unit test example.
@@ -16,9 +16,9 @@ class CountUserTest extends TestCase
      */
     public function testExample()
     {
-        $user = User::where('is_seed', 1)->count();;
+        $user = Cars::where('is_seed', 1)->count();;
 
-    	$result = ($user == 50)?true:false;
+    	$result = ($user == 51)?true:false;
 
         $this->assertTrue($result);
     }
