@@ -38,6 +38,16 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <!-- Constact us Link -->
+                        <li class="nav-item">
+                                <a class="nav-link" href="{{ route('contactus') }}">Contact us</a>
+                        </li>
+
+                        <!-- About us Link -->
+                        <li class="nav-item">
+                                <a class="nav-link" href="{{ route('aboutus') }}">About us</a>
+                        </li>
+                        
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
