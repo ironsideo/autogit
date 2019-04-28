@@ -70,7 +70,7 @@
                     <!-- Constact us Link -->
                     <a class="nav-link" href="{{ route('contactus') }}">Contact Us</a>
                     <!-- About us Link -->
-                    <a class="nav-link" href="{{ route('aboutus') }}">About us</a>
+                    <a class="nav-link" href="{{ route('aboutus') }}">About Us</a>
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
