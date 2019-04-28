@@ -68,7 +68,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     <!-- Constact us Link -->
-                    <a class="nav-link" href="{{ route('contactus') }}">Contact us</a>
+                    <a class="nav-link" href="{{ route('contactus') }}">Contact Us</a>
                     <!-- About us Link -->
                     <a class="nav-link" href="{{ route('aboutus') }}">About us</a>
                     @auth
